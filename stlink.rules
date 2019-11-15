@@ -1,0 +1,20 @@
+# UDEV needs a cuple of rules to detect ST-LINK programmers:
+
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="3748", \
+	MODE:="0660", \
+	SYMLINK+="stlinkv2_%n" \
+	GROUP:="plugdev"
+
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="374a", \
+	MODE:="0660", \
+	SYMLINK+="stlinkv2-1_%n" \
+	GROUP:="plugdev"
+
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="374b", \
+	MODE:="0660", \
+	SYMLINK+="stlinkv2-1_%n" \
+	GROUP:="plugdev"
+
+# The above rules gives a full access to the different versions of
+# ST-LINK devices for members of plugdev group. You can set MODE:="0666"
+# to give access to anybody.
