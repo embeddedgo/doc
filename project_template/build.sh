@@ -4,7 +4,7 @@
 # have similar peripherals but may vary in the amount or structure of RAM.
 #
 # Supported values: imxrt1060, k210, nrf52840, stm32f215, stm32f407, stm32f412,
-# stm32h7x3, stm32l4x6, stm32l4x6
+# stm32h7x3, stm32l4x6
 GOTARGET=stm32f407
 
 # GOMEM (required) describes the structure of available RAM. Currently at most
