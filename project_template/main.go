@@ -7,6 +7,7 @@
 //   https://github.com/embeddedgo/kendryte/tree/master/devboard
 //   https://github.com/embeddedgo/nrf5/tree/master/devboard
 //   https://github.com/embeddedgo/stm32/tree/master/devboard
+//   https://github.com/embeddedgo/imxrt/tree/master/devboard
 //
 // You can find the proper build settings for every supported MCU/board in the
 // board examples subdirectory, eg:
